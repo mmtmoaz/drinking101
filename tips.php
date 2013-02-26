@@ -36,7 +36,21 @@
       </div>
       <div id="content">
         <!-- insert the page content here -->
-      
+        <?php
+  				include('dbconnect.php');
+					$tip = $_POST['tip'];
+					$benefits = $_POST['benefits'];
+					echo "<p>$tip $benefits</p>";
+					echo '<p>$tip $benefits</p>';
+			
+	
+					$query = $query . $tip . "', '" . $benefits . "')";
+					echo "<p>QUERY   $query</p>";
+					$result = mysqli_query($db, $query)
+                         or die("Error Querying Database");
+
+					
+					?>
         
         
        </div>
