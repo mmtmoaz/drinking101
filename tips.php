@@ -47,10 +47,10 @@
 					$query = $query . $tip . "', '" . $benefits . "')";
 					echo "<p>QUERY   $query</p>";
 					$result = mysqli_query($db, $query)
-                         or die("Error Querying Database");
+                         		or die("Error Querying Database");
 
 					
-					?>
+	?>
         
         
        </div>
